@@ -1,5 +1,7 @@
 package ReusableLibraryActions;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -16,22 +18,40 @@ public class Verify_BackgroundColorClass {
 		WebDriver driver=ExcelUtility.getWebDriverfor();
 		//WebElement webElement= GetElement.getWebElement(FieldName, a, b, ObjIdentifier);
 		ExcelUtility.setExcelFile(UtilitiesHelper.Constants.Path_TestData, "Sheet1");
+		try {
 	if(ObjIdentifier=="Xpath")
 	{
-		try {
+		//boolean s;
+
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		String color = driver.findElement(By.xpath(FieldName)).getCssValue("color");
 		System.out.println("color is:"+color);
 		String hex = Color.fromString(color).asHex();
 		System.out.println("Hex color:"+hex);
-		Assert.assertEquals(hex, ExpectedBGColor);
-		System.out.println("Actual and expected color passed in test method is same!");
-		}
-		catch(Exception ex)
+		//Assert.assertEquals(hex, ExpectedBGColor);
+		//if(hex.equalsIgnoreCase(ExpectedBGColor))
+			if(ExpectedBGColor.equalsIgnoreCase(hex))	
 		{
+			//Thread.sleep(1000);
+		//	Assert.assertEquals(hex, ExpectedBGColor);
+			ExcelUtility.setCellData("Passed", a, b,"Pass");
+			System.out.println("Actual and expected color passed in test method is same!");
+		}
+		else {
 			  System.out.println("Actual and expected color passed in test method is NOT same!");	
 			  Thread.sleep(1000);
 			  ExcelUtility.setCellData("Failed", a, b,"Fail");
 		}
+	}
+		//assert(s);
+		//System.out.println("Actual and expected color passed in test method is same!");
+		
+		/*catch(Exception ex)
+		{
+			  System.out.println("Actual and expected color passed in test method is NOT same!");	
+			  Thread.sleep(1000);
+			  ExcelUtility.setCellData("Failed", a, b,"Fail");
+		}*/
 		  /*if(hex.equalsIgnoreCase(ExpectedBGColor))
 		  {
 			  System.out.println("Actual and expected color passed in test method is same!");	
@@ -45,10 +65,30 @@ public class Verify_BackgroundColorClass {
 			  ExcelUtility.setCellData("Failed", a, b,"Fail");
 		  } */
 		 
-	}
-	if(ObjIdentifier=="CSS")
+	
+		else if(ObjIdentifier=="CSS")
 	{
-		try {
+		
+			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+			String color = driver.findElement(By.xpath(FieldName)).getCssValue("color");
+			System.out.println("color is:"+color);
+			String hex = Color.fromString(color).asHex();
+			System.out.println("Hex color:"+hex);
+			//Assert.assertEquals(hex, ExpectedBGColor);
+			if(hex.equalsIgnoreCase(ExpectedBGColor))
+			{
+				//Thread.sleep(1000);
+				//Assert.assertEquals(hex, ExpectedBGColor);
+				ExcelUtility.setCellData("Passed", a, b,"Pass");
+				System.out.println("Actual and expected color passed in test method is same!");
+			}
+			else {
+				  System.out.println("Actual and expected color passed in test method is NOT same!");	
+				  Thread.sleep(1000);
+				  ExcelUtility.setCellData("Failed", a, b,"Fail");
+			}
+	}}
+			/*try {
 			String color = driver.findElement(By.cssSelector(FieldName)).getCssValue("color");
 			System.out.println("color is:"+color);
 			String hex = Color.fromString(color).asHex();
@@ -79,6 +119,13 @@ public class Verify_BackgroundColorClass {
 		  Thread.sleep(1000);
 		  ExcelUtility.setCellData("Failed", a, b,"Fail");
 	  }*/
-	 
+		
+	catch(Exception ex)
+	{
+		  System.out.println("Actual and expected color passed in test method is NOT same!");	
+		  Thread.sleep(1000);
+		  ExcelUtility.setCellData("Failed", a, b,"Fail");
+		 
 	}
-}}
+	}}
+
