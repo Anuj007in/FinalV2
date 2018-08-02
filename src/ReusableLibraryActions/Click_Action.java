@@ -2,11 +2,18 @@ package ReusableLibraryActions;
 import PageObjectModal.ORHomePage_Login;
 import UtilitiesHelper.Log;
 import PageObjectModal.SearchTextPage;
+import java.lang.Object;
+import org.openqa.selenium.support.ui.Select;
+import java.util.NoSuchElementException;
 import java.util.concurrent.TimeUnit;
 import Helper.GetElement;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+//import com.sun.org.apache.bcel.internal.generic.Select;
+import com.thoughtworks.selenium.Wait;
 
 import UtilitiesHelper.Constants;
 import UtilitiesHelper.ExcelUtility;
@@ -75,5 +82,29 @@ public static void clickSearchBtn(WebDriver driver) throws Exception
 		
 	}
 }
+public static void SelectionBox_passSelection(String FieldName, int a,int b,String ObjIdentifier) throws Exception
+{
+	  try {
+		  
+		   WebElement webElement= GetElement.getWebElement(FieldName, a, b, ObjIdentifier);
+		   ExcelUtility.getWebDriverfor().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		  // driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		   //ExcelUtility.setExcelFile(UtilitiesHelper.Constants.Path_TestData, "Sheet1");
+		  // String TextToEnter= ExcelUtility.getCellData(readFromRow,ReadFromColumn);
+	      
+			//WebDriverWait wait = new WebDriverWait(WebDriver.driver, /*seconds=*/10);
 
+	    // webElement = Wait.until(presenceOfElementLocated(By.id("countVal")));
+////*[@id="wiseExperience_dd_list"]/li[1]/a
+		   
+	      Select select = new Select(webElement);
+	      select.deselectAll();
+	      select.selectByVisibleText("Commercial");
+
+	  } catch (NoSuchElementException ex) {
+	      System.out.println("no Object found or clickable-Selection Span or timed out!!");
+	      ex.printStackTrace();
+	  }
+
+	}
 }

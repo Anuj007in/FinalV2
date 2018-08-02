@@ -69,7 +69,7 @@ public class AssertCls {
 				  }
 				  else{
 					  //Assert.assertTrue("Text Not matched in the result-Assert Failed",asrt );
-					  Thread.sleep(3000);
+					  Thread.sleep(2000);
 					  //ExcelUtility.setExcelFile(UtilitiesHelper.Constants.Path_TestData, "Sheet1");
 					  ExcelUtility.setCellData("Failed", a, b,"Fail");
 					  		  
