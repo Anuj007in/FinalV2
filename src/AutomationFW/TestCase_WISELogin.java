@@ -1,30 +1,22 @@
 package AutomationFW;
-import org.testng.annotations.Test;
-import PageObjectModal.SearchTextPage;
-import UtilitiesHelper.Log;
-import ReusableLibraryActions.Click_Action;
-import ReusableLibraryActions.ObjectFound;
-
-import org.testng.annotations.Test;
-//import org.tetng.annotations.BeforeMethod;
-//package UtilitiesHelper;
-import PageObjectModal.ORHomePage_Login;
-import UtilitiesHelper.Constants;
-import UtilitiesHelper.ExcelUtility;
-import UtilitiesHelper.Constants;
-import ReusableLibraryActions.Click_Action;
-import ReusableLibraryActions.AssertCls;
-import ReusableLibraryActions.ClearObject;
-import java.io.IOException;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.Listeners;
+import org.openqa.selenium.support.Color;
 //import org.bouncycastle.eac.EACIOException;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.Listeners;
+import org.testng.annotations.Test;
+
+import ReusableLibraryActions.AssertCls;
+import ReusableLibraryActions.Click_Action;
+import ReusableLibraryActions.ObjectFound;
+import ReusableLibraryActions.Verify_BackgroundColorClass;
+import UtilitiesHelper.Constants;
+import UtilitiesHelper.ExcelUtility;
+import UtilitiesHelper.Log;
 //import javax.swing.JOptionPane;a
 @Listeners(UtilitiesHelper.IListner.class)
 
@@ -75,12 +67,29 @@ public class TestCase_WISELogin {
 		
         Click_Action.Btn_Click(PageObjectModal.WISE_Login_Page.WISE_SignOn_Xpath, 4, 6,"Xpath");
         ExcelUtility.getWebDriverfor().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        Thread.sleep(3000);
+        Thread.sleep(1000);
+        try {
+        AssertCls.AssertText(PageObjectModal.WISE_Login_Page.WISE_Anonymous_PopUp_CSS, 12, 6, 12, 5, "CSS");
+        Click_Action.Btn_Click(PageObjectModal.WISE_Login_Page.WISE_Anonymous_PopUp_Selection_Xpath, 4, 6,"Xpath");
+        Click_Action.Btn_Click(PageObjectModal.WISE_Login_Page.WISE_Anonymous_PopUp_Commercialoption_Xpath, 4, 6, "Xpath");
+       // AssertCls.AssertText(PageObjectModal.WISE_Login_Page.WISE_Anonymous_PopUp_Selection_Xpath, 12, 6, 12, 5, "CSS");
+     //   Click_Action.SelectionBox_passSelection(PageObjectModal.WISE_Login_Page.WISE_Anonymous_PopUp_Selection_Xpath, 4, 6, "Xpath");
+        System.out.println("Anonymous POP UI is displayed and user selected the selection!");
+        ExcelUtility.getWebDriverfor().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        AssertCls.AssertText(PageObjectModal.WISE_HomePage_Page.HomePageTitle_UIExp_Xpath, 4, 6, 4, 5,"Xpath");
+        }
+         catch(Exception ex) {
+        	 System.out.println("Anonymous POP UI is NOT displayed and user will proceed with CRM login experiance");
+         }
+        
+        finally {
+        Thread.sleep(1000);
         driver.navigate().refresh();
         ExcelUtility.getWebDriverfor().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
        // AssertCls.AssertText(PageObjectModal.WISE_HomePage_Page.HomePageTitle_Xpath, 4, 6, 4, 5,"Xpath");
+        System.out.println("NO Anonymous POP UI is displayed flow will take CRM user login route to login!");
         AssertCls.AssertText(PageObjectModal.WISE_HomePage_Page.HomePageTitle_UIExp_Xpath, 4, 6, 4, 5,"Xpath");
-		
+        }
 				
 	}
 	
@@ -197,28 +206,126 @@ Click_Action.Btn_Click(PageObjectModal.WISE_PDPPage_Page.PDP_ProdInfo_CSS, 9, 6,
 		
 				
 	}
+	
 	@Test(priority = 5)
 	public void NavigateToHomePage() throws Exception
 	{
-	//AssertCls.AssertText(PageObjectModal.WISE_HomePage_Page.WISE_HomePageLogo_CSS, 10, 6, 10, 5, "CSS");
 	boolean status=ObjectFound.ObjectFoundOnThePage(PageObjectModal.WISE_HomePage_Page.WISE_HomePageLogo_CSS,10,6,"CSS");
 	if (status==true)
 	{
-		System.out.println("Log Is found on the screen and ready to click");
-		//AssertCls.AssertText(PageObjectModal.WISE_HomePage_Page.WISE_HomePageLogo_CSS, 10, 6, 10, 5, "CSS");
-		Click_Action.Btn_Click(PageObjectModal.WISE_HomePage_Page.WISE_HomePageLogo_CSS, 10, 6, "CSS");
+		System.out.println("Logo Is found on the screen and ready to click");
+		Click_Action.Btn_Click(PageObjectModal.WISE_HomePage_Page.WISE_HomePageLogo_CSS, 11, 6, "CSS");
 		Thread.sleep(1000);
 		AssertCls.AssertText(PageObjectModal.WISE_HomePage_Page.WISE_WelcomeToWise_CSS, 11, 6, 11, 5, "CSS");
-		driver.close();
-		driver.quit();
+		
 	}
 	else
 	{
 		System.out.println("Log Is NOT found on the screen and NOT ready to click");
-		driver.close();
-		driver.quit();
+		
+	}
+		
+	}
+	
+	@Test(priority = 6)
+	public void DocICSearch_ProductDocument() throws Exception
+	{
+		Log.startTestCase("DocICSearch_ProductDocument");
+		//this.driver=driver;
+		//this.driver.get(Constants.URLHome);
+		// this.driver.navigate().to(Constants.URLHome);
+		//driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	//AssertCls.AssertText(PageObjectModal.WISE_HomePage_Page.WISE_HomePageLogo_CSS, 10, 6, 10, 5, "CSS");
+	boolean status=ObjectFound.ObjectFoundOnThePage(PageObjectModal.WISE_DocDetailPage.WISE_SearchBox_Xpath,13,6,"Xpath");
+	if (status==true)
+	{
+		System.out.println("Search box Is found on the screen and ready to enter text");
+		//AssertCls.AssertText(PageObjectModal.WISE_HomePage_Page.WISE_HomePageLogo_CSS, 10, 6, 10, 5, "CSS");
+		//Click_Action.Btn_Click(PageObjectModal.WISE_HomePage_Page.WISE_HomePageLogo_CSS, 10, 6, "CSS");
+		Click_Action.Enter_Text(PageObjectModal.WISE_DocDetailPage.WISE_SearchBox_Xpath, 13, 6, 13, 5,"Xpath");
+		Click_Action.Btn_Click(PageObjectModal.WISE_DocDetailPage.WISE_SearchMagnifier_Xpath_Generic, 13, 6,"Xpath"); 
+		Thread.sleep(1000);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		AssertCls.AssertText(PageObjectModal.WISE_DocDetailPage.WISE_SearchResult_ProdDoc_Xpath, 14, 6, 14, 5, "Xpath");
+		//driver.close();
+		//driver.quit();
+	}
+	else
+	{
+		System.out.println("Search box is not located on the screen/page");
+	//	driver.close();
+		//driver.quit();
+		
+	}
+	
+	}
+	
+	@Test(priority = 7)
+	public void DocumentRendering_ProductDocument() throws Exception
+	{
+		Log.startTestCase("DocumentRendering_ProductDocument");
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	
+	boolean status=ObjectFound.ObjectFoundOnThePage(PageObjectModal.WISE_DocDetailPage.WISE_SearchResult_ProdDoc_Xpath,13,6,"Xpath");
+	if (status==true)
+	{
+		System.out.println("Document ID is found in the search result page and its Title to be clicked");
+		Click_Action.Btn_Click(PageObjectModal.WISE_SearchResultPage.WISE_SearchResultDocTitle1_CSS, 13, 6,"CSS"); 
+		Thread.sleep(1000);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		  //**
+	       Set<String> AllWindowHandles = driver.getWindowHandles();
+	       String window1 = (String) AllWindowHandles.toArray()[0];
+	       System.out.print("window1 handle code = "+AllWindowHandles.toArray()[0]);
+	       String window2 = (String) AllWindowHandles.toArray()[1];
+	       System.out.print("\nwindow2 handle code = "+AllWindowHandles.toArray()[1]);
+	       driver.switchTo().window(window2);
+	       
+	       //**
+		AssertCls.AssertText(PageObjectModal.WISE_DocDetailPage.WISE_DocumentTitleonDetailPage_Xpath, 15, 6, 15, 5, "Xpath");
+		//boolean RatingExist=ObjectFound.ObjectFoundOnThePage(PageObjectModal.WISE_DocDetailPage.WISE_ThumpsUP_CSS, 15, 6, "CSS");
+		   driver.switchTo().window(window1).close();
+	       driver.switchTo().window(window2);
+		//driver.close();
+		//driver.quit();
+	}
+	else
+	{
+		System.out.println("No document link to click has found in search result page");
+		//driver.close();
+	//	driver.quit();
 		
 	}
 	}
+	@Test(priority = 8)
+	public void Rating_ProductDocument() throws Exception
+	{
+		Log.startTestCase("Rating_Product Document");
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	
-}
+	boolean RatingExist=ObjectFound.ObjectFoundOnThePage(PageObjectModal.WISE_DocDetailPage.WISE_ThumpsUP_CSS, 16, 6, "CSS");
+	if (RatingExist==true)
+	{
+		System.out.println("Rating Icon is found on the doc detail page_product document");
+		Click_Action.Btn_Click(PageObjectModal.WISE_DocDetailPage.WISE_ThumpsUP_CSS, 16, 6,"CSS"); 
+		System.out.println("User has clicked on Rating -Thumbs UP Icon");
+		Thread.sleep(1000);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		Verify_BackgroundColorClass.Verify_BackgroundColor(PageObjectModal.WISE_DocDetailPage.WISE_ThumpsUP2_Xpath, 16, 6, "Xpath", "#6BC039");
+		driver.close();
+		driver.quit();
+	}
+		else 
+		{  
+			assert(RatingExist);
+			System.out.println("Rating Icon is not displayed");
+			driver.close();
+			driver.quit();
+			
+		}
+		
+	}
+		
+	}
+	
