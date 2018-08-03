@@ -4,7 +4,7 @@ public class Constants {
 	//public static final String URLHome = "http://www.google.co.in";
 	//test
 	//public static final String URLHome = "https://uat.support.hp.com/us-en";
-	public static final String URLHome = "https://support.hp.com/wise/home/ams-en";
+	public static final String URLHome = "https://uat.support.hp.com/wise/home/ams-en";
 	//public static final String URLHome = "https://in.yahoo.com/?p=us";
 	public static final String ProdForSearch = "P1102";
 	

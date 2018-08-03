@@ -314,14 +314,15 @@ Click_Action.Btn_Click(PageObjectModal.WISE_PDPPage_Page.PDP_ProdInfo_CSS, 9, 6,
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		Verify_BackgroundColorClass.Verify_BackgroundColor(PageObjectModal.WISE_DocDetailPage.WISE_ThumpsUP2_Xpath, 16, 6, "Xpath", "#6BC039");
 		driver.close();
-		driver.quit();
+		//driver.quit();
 	}
 		else 
 		{  
-			assert(RatingExist);
+			
 			System.out.println("Rating Icon is not displayed");
+			assert(RatingExist);
 			driver.close();
-			driver.quit();
+			//driver.quit();
 			
 		}
 		

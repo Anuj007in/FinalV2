@@ -3,17 +3,18 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="AutomationFW.TestCase_Search">
+      <class name="AutomationFW.TestCase_WISELogin">
         <methods>
-          <include name="Home_ModalSearch"/>
-          <include name="Home_PoductSearch"/>
+          <include name="DocumentRendering_ProductDocument"/>
+          <include name="NavigateToPDPPage"/>
+          <include name="tearDown"/>
+          <include name="SearchSKU"/>
+          <include name="DocICSearch_ProductDocument"/>
+          <include name="NavigateToHomePage"/>
+          <include name="Rating_ProductDocument"/>
+          <include name="PDPPage_TabsDIsplay"/>
         </methods>
-      </class> <!-- AutomationFW.TestCase_Search -->
-      <class name="AutomationFW.TestCase_Login">
-        <methods>
-          <include name="LoginTest01"/>
-        </methods>
-      </class> <!-- AutomationFW.TestCase_Login -->
+      </class> <!-- AutomationFW.TestCase_WISELogin -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
