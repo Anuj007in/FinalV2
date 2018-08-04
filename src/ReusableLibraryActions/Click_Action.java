@@ -24,6 +24,7 @@ public static WebElement element= null;
 public static void Btn_Click(String buttonName,int a,int b, String ObjIdentifier) throws Exception
 {
 	
+	ExcelUtility.getWebDriverfor().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	WebElement webElement = GetElement.getWebElement(buttonName,a,b,ObjIdentifier); 
 	webElement.click();
 	ExcelUtility.getWebDriverfor().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -82,12 +83,15 @@ public static void clickSearchBtn(WebDriver driver) throws Exception
 		
 	}
 }
-public static void SelectionBox_passSelection(String FieldName, int a,int b,String ObjIdentifier) throws Exception
+public static void SelectionBox_passSelection(String FieldName, int a,int b,String ObjIdentifier,String PassSelection) throws Exception
 {
 	  try {
 		  
-		   WebElement webElement= GetElement.getWebElement(FieldName, a, b, ObjIdentifier);
 		   ExcelUtility.getWebDriverfor().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		   
+		   WebElement webElement= GetElement.getWebElement(FieldName, a, b, ObjIdentifier);
+		  
+		 //  ExcelUtility.getWebDriverfor().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		  // driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		   //ExcelUtility.setExcelFile(UtilitiesHelper.Constants.Path_TestData, "Sheet1");
 		  // String TextToEnter= ExcelUtility.getCellData(readFromRow,ReadFromColumn);
@@ -97,12 +101,28 @@ public static void SelectionBox_passSelection(String FieldName, int a,int b,Stri
 	    // webElement = Wait.until(presenceOfElementLocated(By.id("countVal")));
 ////*[@id="wiseExperience_dd_list"]/li[1]/a
 		   
-	      Select select = new Select(webElement);
+	     /* Select select = new Select(webElement);
 	      select.deselectAll();
-	      select.selectByVisibleText("Commercial");
-
+	      select.selectByVisibleText(PassSelection);*/
+	      if (webElement.isDisplayed()) {
+	    	  
+	    	  webElement.click();
+			  Thread.sleep(1000);
+	    	  Select select = new Select(webElement);
+		      //select.deselectAll();
+		      select.selectByVisibleText(PassSelection);
+		      System.out.println("Selection is made");
+		      
+		   
+		     // ExcelUtility.setCellData("Passed", a, b, "Pass");
+	      }
+	      else
+	      {
+	    	  System.out.println("Selection box is not displayed");
+	    	  assert(false);
+	      }
 	  } catch (NoSuchElementException ex) {
-	      System.out.println("no Object found or clickable-Selection Span or timed out!!");
+	      System.out.println("no Selection box object is found or clickable-Selection Span or timed out!!");
 	      ex.printStackTrace();
 	  }
 

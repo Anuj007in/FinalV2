@@ -40,7 +40,7 @@ public class AssertCls {
 		  boolean asrt;
 		  if (webElement.isDisplayed()){
 			  
-			  asrt= true;
+			//  asrt= true;
 			  JavascriptExecutor js = (JavascriptExecutor) driver;
 		        //use executeScript() method and pass the arguments 
 		        //Here i pass values based on css style. Yellow background color with solid red color border. 
@@ -80,12 +80,13 @@ public class AssertCls {
 		  }
 		  else
 		  { 
-			  asrt= false;
+			  //asrt= false;
+			 boolean objfound=webElement.isDisplayed();
 			  ExcelUtility.setExcelFile(UtilitiesHelper.Constants.Path_TestData, "Sheet1");
-			  ExcelUtility.setCellData("Fail", a, b,"Fail");
-			  Assert.assertTrue(asrt, "Assert WebElement object is not found-check Xpath!");
+			  ExcelUtility.setCellData("Failed-To locate object on the page", a, b,"Fail");
 			  Log.info("WebElement is not found");
-			 
+			  Assert.assertTrue(objfound, "Assert WebElement object is not found-check Xpath or Object is not displayed on the Page!");
+			  
 		  }}
 		
 		 /* driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);		  
@@ -121,9 +122,12 @@ public class AssertCls {
 		  }*/
 		  catch(Exception ex)
 		  {
+			  boolean objfound2=false;
 			  System.out.println("Assert Text element Not found");
 			  ex.printStackTrace();
-			  ExcelUtility.setCellData("Fail", a, b,"Fail");
+			  ExcelUtility.setCellData("Failed", a, b,"Fail");
+			//  Assert.assertTrue(objfound2, "Assert WebElement object is not found-check Xpath or Object is not displayed on the Page!");
+				 
 		  }
 	  }
 	  

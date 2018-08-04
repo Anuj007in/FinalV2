@@ -66,7 +66,7 @@ public class TestCase_WISELogin {
        
 		
         Click_Action.Btn_Click(PageObjectModal.WISE_Login_Page.WISE_SignOn_Xpath, 4, 6,"Xpath");
-        ExcelUtility.getWebDriverfor().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        ExcelUtility.getWebDriverfor().manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         Thread.sleep(1000);
         try {
         AssertCls.AssertText(PageObjectModal.WISE_Login_Page.WISE_Anonymous_PopUp_CSS, 12, 6, 12, 5, "CSS");
@@ -313,7 +313,7 @@ Click_Action.Btn_Click(PageObjectModal.WISE_PDPPage_Page.PDP_ProdInfo_CSS, 9, 6,
 		Thread.sleep(1000);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		Verify_BackgroundColorClass.Verify_BackgroundColor(PageObjectModal.WISE_DocDetailPage.WISE_ThumpsUP2_Xpath, 16, 6, "Xpath", "#6BC039");
-		driver.close();
+		//driver.close();
 		//driver.quit();
 	}
 		else 
@@ -321,12 +321,48 @@ Click_Action.Btn_Click(PageObjectModal.WISE_PDPPage_Page.PDP_ProdInfo_CSS, 9, 6,
 			
 			System.out.println("Rating Icon is not displayed");
 			assert(RatingExist);
-			driver.close();
+			//driver.close();
 			//driver.quit();
 			
 		}
 		
 	}
 		
+	@Test(priority = 9)
+	public void Feedback_ProductDocument() throws Exception
+	{
+		Log.startTestCase("Feedback without attachment_Product Document");
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	Click_Action.Btn_Click(PageObjectModal.WISE_DocDetailPage.WISE_FeedbackBtn_CSS, 17, 6, "CSS");
+		//driver.switchTo().activeElement();
+		//driver.switchTo().
+	boolean FeedbackPopUPExist=ObjectFound.ObjectFoundOnThePage(PageObjectModal.WISE_DocDetailPage.WISE_FeedbackPopUP_PD_Xpath, 17, 6, "Xpath");
+	if (FeedbackPopUPExist==true)
+	{
+		System.out.println("Feedback Pop up is displayed");
+		System.out.println("Feedback has document title displayed");
+		Thread.sleep(1000);
+		Click_Action.Btn_Click(PageObjectModal.WISE_DocDetailPage.WISE_FeedbackPopUP_Reason_CSS, 17, 6, "CSS");
+		Click_Action.Btn_Click(PageObjectModal.WISE_DocDetailPage.WISE_FeedbackPopUP_Reason_Input_Xpath, 17, 6, "Xpath");
+		Click_Action.Enter_Text(PageObjectModal.WISE_DocDetailPage.WISE_FeedbackPopUP_Title_CSS, 17, 6, 17, 5, "CSS");
+		Click_Action.Enter_Text(PageObjectModal.WISE_DocDetailPage.WISE_FeedbackPopUP_Detail_CSS, 17, 6, 17, 5, "CSS");
+		Click_Action.Btn_Click(PageObjectModal.WISE_DocDetailPage.WISE_FeedbackPopUP_Submit_CSS, 17, 6, "CSS");
+		Thread.sleep(3000);
+		ObjectFound.ObjectFoundOnThePage(PageObjectModal.WISE_DocDetailPage.WISE_Feedback_Success_Xpath, 17, 6, "Xpath");
+		//AssertCls.AssertText(PageObjectModal.WISE_DocDetailPage.WISE_Feedback_Success_Xpath, 17, 6, 17, 5, "Xpath");
+		
+		//assert(FeedbackPopUPExist);
+	}
+		else 
+		{  
+			
+			System.out.println("Feedback pop up is not displayed");
+			driver.close();
+			assert(FeedbackPopUPExist);
+			//driver.quit();
+			
+		}
+		
+	}
 	}
 	

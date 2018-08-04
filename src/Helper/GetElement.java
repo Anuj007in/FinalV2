@@ -50,7 +50,7 @@ public class GetElement {
 			if(rowSum > 0)
 			{
 			ExcelUtility.setExcelFile(UtilitiesHelper.Constants.Path_TestData, "Sheet1");
-			ExcelUtility.setCellData("Fail-GetWebElement-Object is not Found",a,b, "Fail");
+			ExcelUtility.setCellData("Fail-GetWebElement-Object is not Found",a,b, "Failed");
 			System.out.println("Object/Element is not recognized/found- Check the POM-OR value i.e Xpath");
 			}
 		}
