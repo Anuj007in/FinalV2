@@ -78,11 +78,17 @@ public class ObjectFound {
 				       boolean exist= webElement.isDisplayed();
 				       if(exist==true)
 				       {
-				       System.out.println("Webelement is"+webElement+"Found on the page");
+				       System.out.println("From Object found:Webelement is"+webElement+"Found on the page");
 						ExcelUtility.setCellData("Passed", a, b,"Pass");
 						 Assert.assertTrue(exist, "Assert WebElement object is found-check Xpath or Object is not displayed on the Page!");
 							
 						//assert(true);
+				       }
+				       else
+				       {
+				    	    System.out.println(" From ObjectFound:CSS-Webelement is not Found on the page hence Object is Not found!");
+						    ExcelUtility.setExcelFile(UtilitiesHelper.Constants.Path_TestData, "Sheet1");
+							ExcelUtility.setCellData("Failed", a, b,"Fail");  
 				       }
 						return true;
 				}

@@ -11,6 +11,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 //import com.sun.org.apache.bcel.internal.generic.Select;
 import com.thoughtworks.selenium.Wait;
@@ -24,10 +25,31 @@ public static WebElement element= null;
 public static void Btn_Click(String buttonName,int a,int b, String ObjIdentifier) throws Exception
 {
 	
+	try {
 	ExcelUtility.getWebDriverfor().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	WebElement webElement = GetElement.getWebElement(buttonName,a,b,ObjIdentifier); 
-	webElement.click();
+	if(webElement.isDisplayed()) {
+		ExcelUtility.getWebDriverfor().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		webElement.click();
+		 System.out.println("Button"+webElement+"is found and clicked!");
+		 ExcelUtility.setExcelFile(UtilitiesHelper.Constants.Path_TestData, "Sheet1");
+		 ExcelUtility.setCellData("Passed", a, b,"Pass");
+		// Assert.assertTrue(webElement.isDisplayed(), "Element not found to click");
+	}
+	else {
+		 System.out.println("Button"+webElement+"is NOT found on the page to be clicked!");
+		 ExcelUtility.setExcelFile(UtilitiesHelper.Constants.Path_TestData, "Sheet1");
+		 ExcelUtility.setCellData("Failed", a, b,"Fail");
+		 //Assert.assertTrue(webElement.isDisplayed(), "Element not found to click");
+	}
 	ExcelUtility.getWebDriverfor().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	}
+	catch(Exception ex) {
+		System.out.println("From catch:Button is NOT found on the page to be clicked!");
+		ex.printStackTrace();
+		 ExcelUtility.setExcelFile(UtilitiesHelper.Constants.Path_TestData, "Sheet1");
+		 ExcelUtility.setCellData("Failed", a, b,"Fail");
+	}
 	
 }
 
@@ -38,7 +60,8 @@ public static void Enter_Text(String FieldName,int a,int b,int readFromRow,int R
 	WebElement webElement= GetElement.getWebElement(FieldName, a, b, ObjIdentifier);
    ExcelUtility.setExcelFile(UtilitiesHelper.Constants.Path_TestData, "Sheet1");
 	String TextToEnter= ExcelUtility.getCellData(readFromRow,ReadFromColumn);
-   webElement.sendKeys(TextToEnter);
+	webElement.clear();
+	webElement.sendKeys(TextToEnter);
    
   //System.out.println("EnterText Method is called");
    //ExcelUtility.getWebDriverfor();

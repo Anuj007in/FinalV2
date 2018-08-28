@@ -126,7 +126,70 @@ public class AssertCls {
 			  System.out.println("Assert Text element Not found");
 			  ex.printStackTrace();
 			  ExcelUtility.setCellData("Failed", a, b,"Fail");
+			  Assert.fail();
 			//  Assert.assertTrue(objfound2, "Assert WebElement object is not found-check Xpath or Object is not displayed on the Page!");
+				 
+		  }
+	  }
+		public static void Compare_BrowserURL(int a,int b,int ExptdRow,int ExptColumn) throws Exception {
+			 JFrame parent = new JFrame();
+			 WebDriver driver=ExcelUtility.getWebDriverfor();
+			
+		  try{
+	
+		 // WebElement webElement = GetElement.getWebElement(TextFieldObjectID,a,b,ObjIdentifier);
+	
+		 boolean asrt=true;
+		  if (asrt==true){
+			  
+		/*	
+			  JavascriptExecutor js = (JavascriptExecutor) driver;
+		        //use executeScript() method and pass the arguments 
+		        //Here i pass values based on css style. Yellow background color with solid red color border. 
+		  js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", webElement);
+		 	*/
+		  driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);		  
+		  driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
+		  //String ActualText =webElement.getText();
+		  String ActualURL=driver.getCurrentUrl();
+		  
+		  //ActualText = ActualText.replaceAll(": ", "");
+		
+		  ExcelUtility.setExcelFile(UtilitiesHelper.Constants.Path_TestData, "Sheet1");
+		  String ExpectedText=ExcelUtility.getCellData(ExptdRow,ExptColumn);
+		  System.out.println("Actual Browser URL="+ActualURL.toString());
+		  System.out.println("Expected Browser URL="+ExpectedText.toString());
+		  if (ExpectedText.equalsIgnoreCase(ActualURL))
+				
+				  {
+					 System.out.println("Actual and expected URL is Matched!!!!");	
+					 Thread.sleep(2000);
+					 ExcelUtility.setCellData("Passed", a, b,"Pass");
+					}
+				  else{
+					  Thread.sleep(2000);
+					  ExcelUtility.setCellData("Failed", a, b,"Fail");
+					  Assert.assertEquals(ExpectedText,ActualURL,"Assert Failed-URL is not matched");
+					  
+				  }
+		  }
+		  else
+		  { 
+			 // boolean objfound=webElement.isDisplayed();
+			  ExcelUtility.setExcelFile(UtilitiesHelper.Constants.Path_TestData, "Sheet1");
+			  ExcelUtility.setCellData("Failed-URL is not found on page", a, b,"Fail");
+			  Log.info("WebElement is not found");
+			 // Assert.assertTrue(objfound, "Browser URL is not found-probably page does not open!");
+			  Assert.fail("Browser URL is not found on the page!");
+		  }}
+		
+		
+		  catch(Exception ex)
+		  {
+			  boolean objfound2=false;
+			  System.out.println("Assert Text element Not found");
+			  ex.printStackTrace();
+			  ExcelUtility.setCellData("Failed", a, b,"Fail");
 				 
 		  }
 	  }

@@ -21,6 +21,8 @@ public class WISE_PDPPage_Page {
 	public static  String PDP_ProdInfoTitle_CSS ="#product-information-content > div:nth-child(1) > h2:nth-child(1)";
 	public static  String PDP_ProdInfoTitle_Xpath ="/html/body/div[1]/div/div/div[3]/div/div[2]/div/div[2]/section/div[2]/div[2]/div/div/div[3]/div/div/div/div[2]/div[2]/div[3]/div[1]/h2";
 	//****PDP three tabs title link END
+	public static String PDP_Image_CSS="#mainImageId";
+	public static String PDP_Image_Xpath="//*[@id=\"mainImageId\"]";
 	
 	
 	

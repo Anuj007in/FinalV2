@@ -4,7 +4,15 @@ public class Constants {
 	//public static final String URLHome = "http://www.google.co.in";
 	//test
 	//public static final String URLHome = "https://uat.support.hp.com/us-en";
-	public static final String URLHome = "https://support.hp.com/wise/home/ams-en";
+	//public static final String URLHome = "https://uat.support.hp.com/wise/home/ams-en";
+	//public static final String URL_FeedbackRating_ProcessURL="https://uat.support.hp.com/wise/DocumentDetail/ams-en?docId=c04110219&contentType=Process%20Document";
+	//ITG SKP
+	public static final String URLHome = "https://uat.support.hp.com/wise/home/ams-en";
+	public static final String URL_FeedbackRating_ProcessURL="https://uat.support.hp.com/wise/DocumentDetail/ams-en?docId=c04110219&contentType=Process%20Document";
+	
+	//ITG SKP ENDS
+	public static final String Domain_URL="https://uat.support.hp.com/";
+	public static final String URL_ProcessBookmarkDoc=Domain_URL+"wise/DocumentDetail/ams-en?docId=c04110219&contentType=Process%20Document";
 	//public static final String URLHome = "https://in.yahoo.com/?p=us";
 	public static final String ProdForSearch = "P1102";
 	
