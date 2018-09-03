@@ -33,6 +33,7 @@ public class ExcelUtility {
 		if(driver==null)
 		{
 			setWebDriver();
+		 driver.manage().deleteAllCookies();
 		}
 		return driver;
 		

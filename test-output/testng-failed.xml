@@ -5,8 +5,8 @@
     <classes>
       <class name="AutomationFW.TestCase_WISELogin">
         <methods>
-          <include name="DocumentRendering_ProductDocument"/>
           <include name="tearDown"/>
+          <include name="UIExperiance_Toogle"/>
         </methods>
       </class> <!-- AutomationFW.TestCase_WISELogin -->
     </classes>

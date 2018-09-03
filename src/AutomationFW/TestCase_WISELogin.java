@@ -2,21 +2,32 @@ package AutomationFW;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.support.Color;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 //import org.bouncycastle.eac.EACIOException;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+import ReusableLibraryActions.Actions_PageFactory;
 import ReusableLibraryActions.AssertCls;
 import ReusableLibraryActions.Click_Action;
 import ReusableLibraryActions.ObjectFound;
 import ReusableLibraryActions.Verify_BackgroundColorClass;
+import ReusableLibraryActions.Wait_ElementToBeClickable;
 import UtilitiesHelper.Constants;
 import UtilitiesHelper.ExcelUtility;
 import UtilitiesHelper.Log;
+import mx4j.util.Utils;
+import Helper.GetElement;
+import java.io.FileInputStream;
+import UtilitiesHelper.Constants;
+
 //import javax.swing.JOptionPane;a
 @Listeners(UtilitiesHelper.IListner.class)
 
@@ -455,17 +466,18 @@ public void DocumentRendering_ProcessDocument() throws Exception
 	       String window1 = (String) AllWindowHandles.toArray()[0];
 	       System.out.print("window1 handle code = "+AllWindowHandles.toArray()[0]);
 	       String window2 = (String) AllWindowHandles.toArray()[1];
-	       String window3=(String) AllWindowHandles.toArray()[2];
 	       System.out.print("\nwindow2 handle code = "+AllWindowHandles.toArray()[1]);
-	       driver.switchTo().window(window3); 
-	       
+	       //String window3=(String) AllWindowHandles.toArray()[2];
+	      // System.out.print("\nwindow2 handle code = "+AllWindowHandles.toArray()[2]);
+	       driver.switchTo().window(window2); 
+	      // cd v
 	       //**
 	       //Using same Xpath for document detail page title- generic below line-FYI
 		AssertCls.AssertText(PageObjectModal.WISE_DocDetailPage.WISE_DocumentTitleonDetailPage_Xpath, 22, 6, 22, 5, "Xpath");
 		//boolean RatingExist=ObjectFound.ObjectFoundOnThePage(PageObjectModal.WISE_DocDetailPage.WISE_ThumpsUP_CSS, 15, 6, "CSS");
 		   driver.switchTo().window(window1).close();
-		   driver.switchTo().window(window2).close();
-	       driver.switchTo().window(window3);
+		   //driver.switchTo().window(window1).close();
+	       driver.switchTo().window(window2);
 		//driver.close();
 		//driver.quit();
 	}
@@ -483,6 +495,7 @@ public void DocumentRendering_ProcessDocument() throws Exception
 	{
 		Log.startTestCase("DocIDSearch_ManualDocument");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		
 	//AssertCls.AssertText(PageObjectModal.WISE_HomePage_Page.WISE_HomePageLogo_CSS, 10, 6, 10, 5, "CSS");
 	boolean status=ObjectFound.ObjectFoundOnThePage(PageObjectModal.WISE_DocDetailPage.WISE_SearchBox_Xpath, 20, 6,"Xpath");
 	if (status==true)
@@ -532,16 +545,24 @@ public void DocumentRendering_ProcessDocument() throws Exception
 	       System.out.print("window1 handle code = "+AllWindowHandles.toArray()[0]);
 	       String window2 = (String) AllWindowHandles.toArray()[1];
 	       System.out.print("\nwindow2 handle code = "+AllWindowHandles.toArray()[1]);
-	       driver.switchTo().window(window2);
+	     //String window3 = (String) AllWindowHandles.toArray()[2];
+	       //System.out.print("\nwindow2 handle code = "+AllWindowHandles.toArray()[2]);
+	   	driver.switchTo().window(window2);
+	    //driver.switchTo().window(window2).close();
+	      // driver.switchTo().window(window3);
 	       
 	       //**
 	       //For manual Xpath/CSS for manual doc which is PDP will change -FYI
 	       AssertCls.Compare_BrowserURL(23, 6, 23, 5);
 		//AssertCls.AssertText(PageObjectModal.WISE_DocDetailPage.WISE_DocumentTitleonDetailPage_Xpath, 22, 6, 22, 5, "Xpath");
 		//boolean RatingExist=ObjectFound.ObjectFoundOnThePage(PageObjectModal.WISE_DocDetailPage.WISE_ThumpsUP_CSS, 15, 6, "CSS");
-		driver.switchTo().window(window1).close();
-	    driver.switchTo().window(window2);
-		 //driver.switchTo().window(window2);
+	
+	    //driver.switchTo().window(window3).close();
+	   // driver.switchTo().window(window3);
+	    driver.switchTo().window(window2).close();
+	    driver.switchTo().window(window1);
+	    
+		//driver.switchTo().defaultContent();
 		//driver.quit();
 	}
 	else
@@ -843,7 +864,50 @@ public void DocumentRendering_ProcessDocument() throws Exception
        AssertCls.AssertText(PageObjectModal.WISE_HomePage_Page.WISE_Footer_Copyright_Xpath, 42, 6, 42, 5,"Xpath");
      // ObjectFound.ObjectFoundOnThePage(PageObjectModal.WISE_HomePage_Page.WISE_HPLogo_Xpath, 42, 6, "Xpath");
       Log.endTestCase("Verify_Copyright_Displayed ends");
-      driver.close();
+      //driver.close();
+      
+}
+	
+	@Test(priority = 29)
+	public void Verify_ProdutBuilder_TMS() throws Exception
+	{
+	//****USING page Factory*****
+		
+	   Log.startTestCase("Verify_ProdutBuilder_TMS started");
+	//LoginToWise();
+	  // this.driver.get(Constants.URLHome);
+	   //Thread.sleep(1000);
+	   
+	    //ExcelUtility.getWebDriverfor().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	   //Click_Action.Btn_Click(PageObjectModal.WISE_ProductBuilder., 43, 6,"ID");
+	  //  PageFactory.initElements(driver, PageObjectModal.WISE_ProductBuilder.class);
+         //**Actions_PageFactory PageFactObj=new Actions_PageFactory();
+         PageObjectModal.WISE_ProductBuilder cc=PageFactory.initElements(driver, PageObjectModal.WISE_ProductBuilder.class);
+         Thread.sleep(1000);
+        
+        ReusableLibraryActions.Actions_PageFactory.buttonClick_PageFactory(cc.ProductLink, 43, 6);
+        ReusableLibraryActions.Actions_PageFactory.Assert_PageFactory(cc.HpPrinterListBoxItem1, 44, 6, 44, 5);
+        JavascriptExecutor js=(JavascriptExecutor)driver;
+		  js.executeScript("window.scrollBy(0,100)");
+		  Thread.sleep(1000);
+        ReusableLibraryActions.Actions_PageFactory.buttonClick_PageFactory(cc.HpPrinterListBoxItem1, 45, 6);
+       
+       /* if(cc.ProductLink.isDisplayed())
+        		{
+        	Wait_ElementToBeClickable.CustomExplicitWait(cc.ProductLink, 20,driver);
+        	cc.ProductLink.click();
+       Thread.sleep(4000);
+       System.out.pri444nt("Prod link is displayed="+cc.ProductLink.getText());
+     //  ExcelUtility.setExcelFile(UtilitiesHelper.Constants.Path_TestData, "Sheet1");
+       ExcelUtility.setCellData("Passed", 43, 6, "Pass");
+        		}
+        else
+        { System.out.print("Prod link is NOT displayed");
+        //ExcelUtility.setExcelFile(UtilitiesHelper.Constants.Path_TestData, "Sheet1");
+           ExcelUtility.setCellData("Failed", 43, 6, "Fail");}
+     // ReusableLibraryActions.Actions_PageFactory.buttonClick_PageFactory(cc.ProductLink, 43, 6); */
+      Log.endTestCase("Verify_ProdutBuilder_TMS ends");
+      //driver.close();
       
 }
 	

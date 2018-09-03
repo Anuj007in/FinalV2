@@ -5,14 +5,8 @@
     <classes>
       <class name="AutomationFW.TestCase_WISELogin">
         <methods>
-          <include name="DocumentRendering_ProductDocument"/>
-          <include name="NavigateToPDPPage"/>
           <include name="tearDown"/>
-          <include name="SearchSKU"/>
-          <include name="DocICSearch_ProductDocument"/>
-          <include name="NavigateToHomePage"/>
-          <include name="Rating_ProductDocument"/>
-          <include name="PDPPage_TabsDIsplay"/>
+          <include name="Verify_ProdutBuilder_TMS"/>
         </methods>
       </class> <!-- AutomationFW.TestCase_WISELogin -->
     </classes>
