@@ -5,6 +5,7 @@ import org.openqa.selenium.support.Color;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.apache.log4j.Logger;
 //import org.bouncycastle.eac.EACIOException;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -29,11 +30,13 @@ import java.io.FileInputStream;
 import UtilitiesHelper.Constants;
 
 //import javax.swing.JOptionPane;a
+/* commented indivisual Listener class call- moved to testng to avoid cumberness
 @Listeners(UtilitiesHelper.IListner.class)
+*/
 
 @Test
 public class TestCase_WISELogin {
-	
+	//private static final Logger Log = Logger.getLogger(TestCase_WISELogin.class.getName());
 	WebDriver driver = null;
 	public TestCase_WISELogin()
 	{
@@ -54,7 +57,8 @@ public class TestCase_WISELogin {
 	} 
 	@AfterClass
     public void tearDown() {
-        driver.close();
+        driver.manage().deleteAllCookies();
+		driver.close();
     }
 	@Test(priority = 1)
 	//@BeforeMethod
@@ -67,7 +71,7 @@ public class TestCase_WISELogin {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	
 		Thread.sleep(1000);
-     
+       Log.info("Application is up and running and ready for automation");
        ExcelUtility.getWebDriverfor().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
        Click_Action.Btn_Click(PageObjectModal.WISE_Login_Page.Email_CompLink_Xpath, 4, 6,"Xpath");
        Thread.sleep(1000);
@@ -133,9 +137,10 @@ public class TestCase_WISELogin {
 				
 	}
 	*/
-	
-	@Test(priority = 2)
+	//when used @Test(priority = 2,dependsOnMethods={"LoginToWise"}) it will skip if mentioned method is failed
+	@Test(priority = 2,dependsOnMethods={"LoginToWise"})
 	//@BeforeMethod
+	//enabled=false to ignore a test case
 	public void SearchSKU() throws Exception
 	{
 		Log.startTestCase("WISE_SKU Search");
@@ -155,7 +160,7 @@ public class TestCase_WISELogin {
        /* Click_Action.Btn_Click(PageObjectModal.WISE_Login_Page.WISE_SignOn_Xpath, 2, 6);
         Thread.sleep(1000);
         AssertCls.AssertText(PageObjectModal.WISE_HomePage_Page.HomePageTitle_Xpath, 1, 2, 4, 5);*/
-		
+		Log.endTestCase("WISE_SKU Search");
 				
 	}
 	@Test(priority = 3)
@@ -874,6 +879,7 @@ public void DocumentRendering_ProcessDocument() throws Exception
 	//****USING page Factory*****
 		
 	   Log.startTestCase("Verify_ProdutBuilder_TMS started");
+	   
 	//LoginToWise();
 	  // this.driver.get(Constants.URLHome);
 	   //Thread.sleep(1000);

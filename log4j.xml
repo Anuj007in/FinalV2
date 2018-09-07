@@ -19,11 +19,9 @@
 </appender>
 
 <root>
-
-<level value="INFO"/>
-
-<appender-ref ref="fileAppender"/>
-
+ <level value="INFO"/>
+   <!-- no appender, output will be swallowed (I think) -->
+<!--<appender-ref ref="fileAppender" />-->
 </root>
 
 </log4j:configuration>

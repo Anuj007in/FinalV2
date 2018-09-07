@@ -12,7 +12,7 @@ import Helper.GetElement;
 public class Log {
 	// Initialize Log4j logs 
 	
-		private static Logger Log = Logger.getLogger(Log.class.getName());
+		private static final Logger Log = Logger.getLogger(Log.class.getName());
 		
 		
 		//private static Logger Log = LoggerFactory.getLogger(GetElement.class);
@@ -70,6 +70,7 @@ public class Log {
 	 public static void error(String message) {
 
 	    Log.error(message);
+	    
 
 		}
 

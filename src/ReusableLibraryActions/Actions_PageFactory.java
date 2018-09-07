@@ -55,6 +55,7 @@ public class Actions_PageFactory {
 				if(rowSum > 0)
 		    ExcelUtility.setExcelFile(UtilitiesHelper.Constants.Path_TestData, "Sheet1");
 			ExcelUtility.setCellData("Passed", a, b,"Pass");
+			Log.error("Excel connection is not established!");
 			// Assert.assertTrue(webElement.isDisplayed(), "Element not found to click");
 		    }
 		  /* else {
