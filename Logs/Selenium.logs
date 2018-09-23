@@ -1,0 +1,198 @@
+13:46:57,341  INFO UtilitiesHelper.Log<strong>{1}</strong>:28 - ****************************************************************************************
+13:46:57,344  INFO UtilitiesHelper.Log<strong>{1}</strong>:30 - ****************************************************************************************
+13:46:57,344  INFO UtilitiesHelper.Log<strong>{1}</strong>:32 - $$$$$$$$$$$$$$$$$$$$$                 WISE_LoginTest       $$$$$$$$$$$$$$$$$$$$$$$$$
+13:46:57,344  INFO UtilitiesHelper.Log<strong>{1}</strong>:34 - ****************************************************************************************
+13:46:57,344  INFO UtilitiesHelper.Log<strong>{1}</strong>:36 - ****************************************************************************************
+13:47:01,214  INFO UtilitiesHelper.Log<strong>{1}</strong>:60 - Application is up and running and ready for automation
+13:47:25,117  INFO UtilitiesHelper.Log<strong>{1}</strong>:28 - ****************************************************************************************
+13:47:25,117  INFO UtilitiesHelper.Log<strong>{1}</strong>:30 - ****************************************************************************************
+13:47:25,117  INFO UtilitiesHelper.Log<strong>{1}</strong>:32 - $$$$$$$$$$$$$$$$$$$$$                 WISE_SKU Search       $$$$$$$$$$$$$$$$$$$$$$$$$
+13:47:25,117  INFO UtilitiesHelper.Log<strong>{1}</strong>:34 - ****************************************************************************************
+13:47:25,120  INFO UtilitiesHelper.Log<strong>{1}</strong>:36 - ****************************************************************************************
+13:48:06,802  INFO UtilitiesHelper.Log<strong>{1}</strong>:28 - ****************************************************************************************
+13:48:06,802  INFO UtilitiesHelper.Log<strong>{1}</strong>:30 - ****************************************************************************************
+13:48:06,802  INFO UtilitiesHelper.Log<strong>{1}</strong>:32 - $$$$$$$$$$$$$$$$$$$$$                 DocICSearch_ProductDocument       $$$$$$$$$$$$$$$$$$$$$$$$$
+13:48:06,802  INFO UtilitiesHelper.Log<strong>{1}</strong>:34 - ****************************************************************************************
+13:48:06,802  INFO UtilitiesHelper.Log<strong>{1}</strong>:36 - ****************************************************************************************
+13:48:16,807  INFO UtilitiesHelper.Log<strong>{1}</strong>:28 - ****************************************************************************************
+13:48:16,808  INFO UtilitiesHelper.Log<strong>{1}</strong>:30 - ****************************************************************************************
+13:48:16,808  INFO UtilitiesHelper.Log<strong>{1}</strong>:32 - $$$$$$$$$$$$$$$$$$$$$                 DocumentRendering_ProductDocument       $$$$$$$$$$$$$$$$$$$$$$$$$
+13:48:16,808  INFO UtilitiesHelper.Log<strong>{1}</strong>:34 - ****************************************************************************************
+13:48:16,808  INFO UtilitiesHelper.Log<strong>{1}</strong>:36 - ****************************************************************************************
+13:48:26,378  INFO UtilitiesHelper.Log<strong>{1}</strong>:28 - ****************************************************************************************
+13:48:26,379  INFO UtilitiesHelper.Log<strong>{1}</strong>:30 - ****************************************************************************************
+13:48:26,379  INFO UtilitiesHelper.Log<strong>{1}</strong>:32 - $$$$$$$$$$$$$$$$$$$$$                 Rating_Product Document       $$$$$$$$$$$$$$$$$$$$$$$$$
+13:48:26,379  INFO UtilitiesHelper.Log<strong>{1}</strong>:34 - ****************************************************************************************
+13:48:26,379  INFO UtilitiesHelper.Log<strong>{1}</strong>:36 - ****************************************************************************************
+13:48:27,785  INFO UtilitiesHelper.Log<strong>{1}</strong>:28 - ****************************************************************************************
+13:48:27,785  INFO UtilitiesHelper.Log<strong>{1}</strong>:30 - ****************************************************************************************
+13:48:27,785  INFO UtilitiesHelper.Log<strong>{1}</strong>:32 - $$$$$$$$$$$$$$$$$$$$$                 Feedback without attachment_Product Document       $$$$$$$$$$$$$$$$$$$$$$$$$
+13:48:27,785  INFO UtilitiesHelper.Log<strong>{1}</strong>:34 - ****************************************************************************************
+13:48:27,785  INFO UtilitiesHelper.Log<strong>{1}</strong>:36 - ****************************************************************************************
+13:48:33,516  INFO UtilitiesHelper.Log<strong>{1}</strong>:28 - ****************************************************************************************
+13:48:33,517  INFO UtilitiesHelper.Log<strong>{1}</strong>:30 - ****************************************************************************************
+13:48:33,517  INFO UtilitiesHelper.Log<strong>{1}</strong>:32 - $$$$$$$$$$$$$$$$$$$$$                 DocIDSearch_ProcessDocument       $$$$$$$$$$$$$$$$$$$$$$$$$
+13:48:33,517  INFO UtilitiesHelper.Log<strong>{1}</strong>:34 - ****************************************************************************************
+13:48:33,517  INFO UtilitiesHelper.Log<strong>{1}</strong>:36 - ****************************************************************************************
+13:48:38,571  INFO UtilitiesHelper.Log<strong>{1}</strong>:28 - ****************************************************************************************
+13:48:38,571  INFO UtilitiesHelper.Log<strong>{1}</strong>:30 - ****************************************************************************************
+13:48:38,571  INFO UtilitiesHelper.Log<strong>{1}</strong>:32 - $$$$$$$$$$$$$$$$$$$$$                 DocumentRendering_ProcessDocument       $$$$$$$$$$$$$$$$$$$$$$$$$
+13:48:38,571  INFO UtilitiesHelper.Log<strong>{1}</strong>:34 - ****************************************************************************************
+13:48:38,571  INFO UtilitiesHelper.Log<strong>{1}</strong>:36 - ****************************************************************************************
+13:48:45,003  INFO UtilitiesHelper.Log<strong>{1}</strong>:28 - ****************************************************************************************
+13:48:45,003  INFO UtilitiesHelper.Log<strong>{1}</strong>:30 - ****************************************************************************************
+13:48:45,003  INFO UtilitiesHelper.Log<strong>{1}</strong>:32 - $$$$$$$$$$$$$$$$$$$$$                 DocIDSearch_ManualDocument       $$$$$$$$$$$$$$$$$$$$$$$$$
+13:48:45,003  INFO UtilitiesHelper.Log<strong>{1}</strong>:34 - ****************************************************************************************
+13:48:45,003  INFO UtilitiesHelper.Log<strong>{1}</strong>:36 - ****************************************************************************************
+13:48:49,780  INFO UtilitiesHelper.Log<strong>{1}</strong>:28 - ****************************************************************************************
+13:48:49,780  INFO UtilitiesHelper.Log<strong>{1}</strong>:30 - ****************************************************************************************
+13:48:49,781  INFO UtilitiesHelper.Log<strong>{1}</strong>:32 - $$$$$$$$$$$$$$$$$$$$$                 DocumentRendering_ProcessDocument       $$$$$$$$$$$$$$$$$$$$$$$$$
+13:48:49,781  INFO UtilitiesHelper.Log<strong>{1}</strong>:34 - ****************************************************************************************
+13:48:49,781  INFO UtilitiesHelper.Log<strong>{1}</strong>:36 - ****************************************************************************************
+13:48:55,124  INFO UtilitiesHelper.Log<strong>{1}</strong>:28 - ****************************************************************************************
+13:48:55,124  INFO UtilitiesHelper.Log<strong>{1}</strong>:30 - ****************************************************************************************
+13:48:55,124  INFO UtilitiesHelper.Log<strong>{1}</strong>:32 - $$$$$$$$$$$$$$$$$$$$$                 Rating_Process Document       $$$$$$$$$$$$$$$$$$$$$$$$$
+13:48:55,124  INFO UtilitiesHelper.Log<strong>{1}</strong>:34 - ****************************************************************************************
+13:48:55,125  INFO UtilitiesHelper.Log<strong>{1}</strong>:36 - ****************************************************************************************
+13:48:58,337  INFO UtilitiesHelper.Log<strong>{1}</strong>:28 - ****************************************************************************************
+13:48:58,337  INFO UtilitiesHelper.Log<strong>{1}</strong>:30 - ****************************************************************************************
+13:48:58,338  INFO UtilitiesHelper.Log<strong>{1}</strong>:32 - $$$$$$$$$$$$$$$$$$$$$                 Feedback without attachment_Product Document       $$$$$$$$$$$$$$$$$$$$$$$$$
+13:48:58,338  INFO UtilitiesHelper.Log<strong>{1}</strong>:34 - ****************************************************************************************
+13:48:58,338  INFO UtilitiesHelper.Log<strong>{1}</strong>:36 - ****************************************************************************************
+13:49:03,909  INFO UtilitiesHelper.Log<strong>{1}</strong>:28 - ****************************************************************************************
+13:49:03,909  INFO UtilitiesHelper.Log<strong>{1}</strong>:30 - ****************************************************************************************
+13:49:03,909  INFO UtilitiesHelper.Log<strong>{1}</strong>:32 - $$$$$$$$$$$$$$$$$$$$$                 Search_ByProductTerm_ProdContext       $$$$$$$$$$$$$$$$$$$$$$$$$
+13:49:03,910  INFO UtilitiesHelper.Log<strong>{1}</strong>:34 - ****************************************************************************************
+13:49:03,910  INFO UtilitiesHelper.Log<strong>{1}</strong>:36 - ****************************************************************************************
+13:49:10,911  INFO UtilitiesHelper.Log<strong>{1}</strong>:28 - ****************************************************************************************
+13:49:10,912  INFO UtilitiesHelper.Log<strong>{1}</strong>:30 - ****************************************************************************************
+13:49:10,912  INFO UtilitiesHelper.Log<strong>{1}</strong>:32 - $$$$$$$$$$$$$$$$$$$$$                 Verify_PDPImage started       $$$$$$$$$$$$$$$$$$$$$$$$$
+13:49:10,912  INFO UtilitiesHelper.Log<strong>{1}</strong>:34 - ****************************************************************************************
+13:49:10,912  INFO UtilitiesHelper.Log<strong>{1}</strong>:36 - ****************************************************************************************
+13:49:23,353  INFO UtilitiesHelper.Log<strong>{1}</strong>:44 - XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX
+13:49:23,353  INFO UtilitiesHelper.Log<strong>{1}</strong>:46 - X
+13:49:23,354  INFO UtilitiesHelper.Log<strong>{1}</strong>:48 - X
+13:49:23,354  INFO UtilitiesHelper.Log<strong>{1}</strong>:50 - X
+13:49:23,354  INFO UtilitiesHelper.Log<strong>{1}</strong>:52 - X
+13:49:23,356  INFO UtilitiesHelper.Log<strong>{1}</strong>:28 - ****************************************************************************************
+13:49:23,356  INFO UtilitiesHelper.Log<strong>{1}</strong>:30 - ****************************************************************************************
+13:49:23,357  INFO UtilitiesHelper.Log<strong>{1}</strong>:32 - $$$$$$$$$$$$$$$$$$$$$                 Verify_ToolDisplay started       $$$$$$$$$$$$$$$$$$$$$$$$$
+13:49:23,357  INFO UtilitiesHelper.Log<strong>{1}</strong>:34 - ****************************************************************************************
+13:49:23,357  INFO UtilitiesHelper.Log<strong>{1}</strong>:36 - ****************************************************************************************
+13:49:26,457  INFO UtilitiesHelper.Log<strong>{1}</strong>:44 - XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX
+13:49:26,457  INFO UtilitiesHelper.Log<strong>{1}</strong>:46 - X
+13:49:26,457  INFO UtilitiesHelper.Log<strong>{1}</strong>:48 - X
+13:49:26,457  INFO UtilitiesHelper.Log<strong>{1}</strong>:50 - X
+13:49:26,457  INFO UtilitiesHelper.Log<strong>{1}</strong>:52 - X
+13:49:26,461  INFO UtilitiesHelper.Log<strong>{1}</strong>:28 - ****************************************************************************************
+13:49:26,462  INFO UtilitiesHelper.Log<strong>{1}</strong>:30 - ****************************************************************************************
+13:49:26,462  INFO UtilitiesHelper.Log<strong>{1}</strong>:32 - $$$$$$$$$$$$$$$$$$$$$                 Verify_Link_Display started       $$$$$$$$$$$$$$$$$$$$$$$$$
+13:49:26,462  INFO UtilitiesHelper.Log<strong>{1}</strong>:34 - ****************************************************************************************
+13:49:26,462  INFO UtilitiesHelper.Log<strong>{1}</strong>:36 - ****************************************************************************************
+13:49:29,561  INFO UtilitiesHelper.Log<strong>{1}</strong>:44 - XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX
+13:49:29,561  INFO UtilitiesHelper.Log<strong>{1}</strong>:46 - X
+13:49:29,562  INFO UtilitiesHelper.Log<strong>{1}</strong>:48 - X
+13:49:29,562  INFO UtilitiesHelper.Log<strong>{1}</strong>:50 - X
+13:49:29,562  INFO UtilitiesHelper.Log<strong>{1}</strong>:52 - X
+13:49:29,564  INFO UtilitiesHelper.Log<strong>{1}</strong>:28 - ****************************************************************************************
+13:49:29,564  INFO UtilitiesHelper.Log<strong>{1}</strong>:30 - ****************************************************************************************
+13:49:29,564  INFO UtilitiesHelper.Log<strong>{1}</strong>:32 - $$$$$$$$$$$$$$$$$$$$$                 UIExperiance_Toogle starts       $$$$$$$$$$$$$$$$$$$$$$$$$
+13:49:29,564  INFO UtilitiesHelper.Log<strong>{1}</strong>:34 - ****************************************************************************************
+13:49:29,564  INFO UtilitiesHelper.Log<strong>{1}</strong>:36 - ****************************************************************************************
+13:49:43,599  INFO UtilitiesHelper.Log<strong>{1}</strong>:44 - XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX
+13:49:43,599  INFO UtilitiesHelper.Log<strong>{1}</strong>:46 - X
+13:49:43,599  INFO UtilitiesHelper.Log<strong>{1}</strong>:48 - X
+13:49:43,599  INFO UtilitiesHelper.Log<strong>{1}</strong>:50 - X
+13:49:43,599  INFO UtilitiesHelper.Log<strong>{1}</strong>:52 - X
+13:49:43,605  INFO UtilitiesHelper.Log<strong>{1}</strong>:28 - ****************************************************************************************
+13:49:43,605  INFO UtilitiesHelper.Log<strong>{1}</strong>:30 - ****************************************************************************************
+13:49:43,606  INFO UtilitiesHelper.Log<strong>{1}</strong>:32 - $$$$$$$$$$$$$$$$$$$$$                 Verify_ProcessTab_Display started       $$$$$$$$$$$$$$$$$$$$$$$$$
+13:49:43,606  INFO UtilitiesHelper.Log<strong>{1}</strong>:34 - ****************************************************************************************
+13:49:43,606  INFO UtilitiesHelper.Log<strong>{1}</strong>:36 - ****************************************************************************************
+13:49:46,697  INFO UtilitiesHelper.Log<strong>{1}</strong>:44 - XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX
+13:49:46,698  INFO UtilitiesHelper.Log<strong>{1}</strong>:46 - X
+13:49:46,698  INFO UtilitiesHelper.Log<strong>{1}</strong>:48 - X
+13:49:46,698  INFO UtilitiesHelper.Log<strong>{1}</strong>:50 - X
+13:49:46,698  INFO UtilitiesHelper.Log<strong>{1}</strong>:52 - X
+13:49:46,704  INFO UtilitiesHelper.Log<strong>{1}</strong>:28 - ****************************************************************************************
+13:49:46,704  INFO UtilitiesHelper.Log<strong>{1}</strong>:30 - ****************************************************************************************
+13:49:46,704  INFO UtilitiesHelper.Log<strong>{1}</strong>:32 - $$$$$$$$$$$$$$$$$$$$$                 Verify_ProductTab_Display started       $$$$$$$$$$$$$$$$$$$$$$$$$
+13:49:46,704  INFO UtilitiesHelper.Log<strong>{1}</strong>:34 - ****************************************************************************************
+13:49:46,704  INFO UtilitiesHelper.Log<strong>{1}</strong>:36 - ****************************************************************************************
+13:49:49,800  INFO UtilitiesHelper.Log<strong>{1}</strong>:44 - XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX
+13:49:49,801  INFO UtilitiesHelper.Log<strong>{1}</strong>:46 - X
+13:49:49,801  INFO UtilitiesHelper.Log<strong>{1}</strong>:48 - X
+13:49:49,801  INFO UtilitiesHelper.Log<strong>{1}</strong>:50 - X
+13:49:49,801  INFO UtilitiesHelper.Log<strong>{1}</strong>:52 - X
+13:49:49,807  INFO UtilitiesHelper.Log<strong>{1}</strong>:28 - ****************************************************************************************
+13:49:49,808  INFO UtilitiesHelper.Log<strong>{1}</strong>:30 - ****************************************************************************************
+13:49:49,813  INFO UtilitiesHelper.Log<strong>{1}</strong>:32 - $$$$$$$$$$$$$$$$$$$$$                 Verify_HPLogo_Display started       $$$$$$$$$$$$$$$$$$$$$$$$$
+13:49:49,813  INFO UtilitiesHelper.Log<strong>{1}</strong>:34 - ****************************************************************************************
+13:49:49,814  INFO UtilitiesHelper.Log<strong>{1}</strong>:36 - ****************************************************************************************
+13:49:50,888  INFO UtilitiesHelper.Log<strong>{1}</strong>:44 - XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX
+13:49:50,888  INFO UtilitiesHelper.Log<strong>{1}</strong>:46 - X
+13:49:50,888  INFO UtilitiesHelper.Log<strong>{1}</strong>:48 - X
+13:49:50,888  INFO UtilitiesHelper.Log<strong>{1}</strong>:50 - X
+13:49:50,889  INFO UtilitiesHelper.Log<strong>{1}</strong>:52 - X
+13:49:50,892  INFO UtilitiesHelper.Log<strong>{1}</strong>:28 - ****************************************************************************************
+13:49:50,892  INFO UtilitiesHelper.Log<strong>{1}</strong>:30 - ****************************************************************************************
+13:49:50,892  INFO UtilitiesHelper.Log<strong>{1}</strong>:32 - $$$$$$$$$$$$$$$$$$$$$                 Verify_FooterSection_Displayed started       $$$$$$$$$$$$$$$$$$$$$$$$$
+13:49:50,892  INFO UtilitiesHelper.Log<strong>{1}</strong>:34 - ****************************************************************************************
+13:49:50,892  INFO UtilitiesHelper.Log<strong>{1}</strong>:36 - ****************************************************************************************
+13:49:51,929  INFO UtilitiesHelper.Log<strong>{1}</strong>:44 - XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX
+13:49:51,929  INFO UtilitiesHelper.Log<strong>{1}</strong>:46 - X
+13:49:51,929  INFO UtilitiesHelper.Log<strong>{1}</strong>:48 - X
+13:49:51,930  INFO UtilitiesHelper.Log<strong>{1}</strong>:50 - X
+13:49:51,930  INFO UtilitiesHelper.Log<strong>{1}</strong>:52 - X
+13:49:51,932  INFO UtilitiesHelper.Log<strong>{1}</strong>:28 - ****************************************************************************************
+13:49:51,932  INFO UtilitiesHelper.Log<strong>{1}</strong>:30 - ****************************************************************************************
+13:49:51,932  INFO UtilitiesHelper.Log<strong>{1}</strong>:32 - $$$$$$$$$$$$$$$$$$$$$                 Verify_SitMap_Displayed started       $$$$$$$$$$$$$$$$$$$$$$$$$
+13:49:51,932  INFO UtilitiesHelper.Log<strong>{1}</strong>:34 - ****************************************************************************************
+13:49:51,932  INFO UtilitiesHelper.Log<strong>{1}</strong>:36 - ****************************************************************************************
+13:49:55,024  INFO UtilitiesHelper.Log<strong>{1}</strong>:44 - XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX
+13:49:55,024  INFO UtilitiesHelper.Log<strong>{1}</strong>:46 - X
+13:49:55,024  INFO UtilitiesHelper.Log<strong>{1}</strong>:48 - X
+13:49:55,025  INFO UtilitiesHelper.Log<strong>{1}</strong>:50 - X
+13:49:55,025  INFO UtilitiesHelper.Log<strong>{1}</strong>:52 - X
+13:49:55,028  INFO UtilitiesHelper.Log<strong>{1}</strong>:28 - ****************************************************************************************
+13:49:55,028  INFO UtilitiesHelper.Log<strong>{1}</strong>:30 - ****************************************************************************************
+13:49:55,028  INFO UtilitiesHelper.Log<strong>{1}</strong>:32 - $$$$$$$$$$$$$$$$$$$$$                 Verify_TermOfUse_Displayed started       $$$$$$$$$$$$$$$$$$$$$$$$$
+13:49:55,028  INFO UtilitiesHelper.Log<strong>{1}</strong>:34 - ****************************************************************************************
+13:49:55,028  INFO UtilitiesHelper.Log<strong>{1}</strong>:36 - ****************************************************************************************
+13:49:58,129  INFO UtilitiesHelper.Log<strong>{1}</strong>:44 - XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX
+13:49:58,129  INFO UtilitiesHelper.Log<strong>{1}</strong>:46 - X
+13:49:58,130  INFO UtilitiesHelper.Log<strong>{1}</strong>:48 - X
+13:49:58,130  INFO UtilitiesHelper.Log<strong>{1}</strong>:50 - X
+13:49:58,130  INFO UtilitiesHelper.Log<strong>{1}</strong>:52 - X
+13:49:58,135  INFO UtilitiesHelper.Log<strong>{1}</strong>:28 - ****************************************************************************************
+13:49:58,135  INFO UtilitiesHelper.Log<strong>{1}</strong>:30 - ****************************************************************************************
+13:49:58,135  INFO UtilitiesHelper.Log<strong>{1}</strong>:32 - $$$$$$$$$$$$$$$$$$$$$                 Verify_PrivacyLink_Displayed started       $$$$$$$$$$$$$$$$$$$$$$$$$
+13:49:58,135  INFO UtilitiesHelper.Log<strong>{1}</strong>:34 - ****************************************************************************************
+13:49:58,135  INFO UtilitiesHelper.Log<strong>{1}</strong>:36 - ****************************************************************************************
+13:50:01,221  INFO UtilitiesHelper.Log<strong>{1}</strong>:44 - XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX
+13:50:01,222  INFO UtilitiesHelper.Log<strong>{1}</strong>:46 - X
+13:50:01,222  INFO UtilitiesHelper.Log<strong>{1}</strong>:48 - X
+13:50:01,222  INFO UtilitiesHelper.Log<strong>{1}</strong>:50 - X
+13:50:01,222  INFO UtilitiesHelper.Log<strong>{1}</strong>:52 - X
+13:50:01,228  INFO UtilitiesHelper.Log<strong>{1}</strong>:28 - ****************************************************************************************
+13:50:01,229  INFO UtilitiesHelper.Log<strong>{1}</strong>:30 - ****************************************************************************************
+13:50:01,229  INFO UtilitiesHelper.Log<strong>{1}</strong>:32 - $$$$$$$$$$$$$$$$$$$$$                 Verify_Copyright_Displayed started       $$$$$$$$$$$$$$$$$$$$$$$$$
+13:50:01,229  INFO UtilitiesHelper.Log<strong>{1}</strong>:34 - ****************************************************************************************
+13:50:01,229  INFO UtilitiesHelper.Log<strong>{1}</strong>:36 - ****************************************************************************************
+13:50:04,322  INFO UtilitiesHelper.Log<strong>{1}</strong>:44 - XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX
+13:50:04,322  INFO UtilitiesHelper.Log<strong>{1}</strong>:46 - X
+13:50:04,322  INFO UtilitiesHelper.Log<strong>{1}</strong>:48 - X
+13:50:04,322  INFO UtilitiesHelper.Log<strong>{1}</strong>:50 - X
+13:50:04,322  INFO UtilitiesHelper.Log<strong>{1}</strong>:52 - X
+13:50:04,327  INFO UtilitiesHelper.Log<strong>{1}</strong>:28 - ****************************************************************************************
+13:50:04,327  INFO UtilitiesHelper.Log<strong>{1}</strong>:30 - ****************************************************************************************
+13:50:04,327  INFO UtilitiesHelper.Log<strong>{1}</strong>:32 - $$$$$$$$$$$$$$$$$$$$$                 Verify_ProdutBuilder_TMS started       $$$$$$$$$$$$$$$$$$$$$$$$$
+13:50:04,327  INFO UtilitiesHelper.Log<strong>{1}</strong>:34 - ****************************************************************************************
+13:50:04,327  INFO UtilitiesHelper.Log<strong>{1}</strong>:36 - ****************************************************************************************
+13:50:11,437 ERROR UtilitiesHelper.Log<strong>{1}</strong>:72 - Excel connection is not established!
+13:50:19,748 ERROR UtilitiesHelper.Log<strong>{1}</strong>:72 - Excel connection is not established!
+13:50:19,748  INFO UtilitiesHelper.Log<strong>{1}</strong>:44 - XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX
+13:50:19,748  INFO UtilitiesHelper.Log<strong>{1}</strong>:46 - X
+13:50:19,748  INFO UtilitiesHelper.Log<strong>{1}</strong>:48 - X
+13:50:19,748  INFO UtilitiesHelper.Log<strong>{1}</strong>:50 - X
+13:50:19,748  INFO UtilitiesHelper.Log<strong>{1}</strong>:52 - X

@@ -27,7 +27,7 @@ import UtilitiesHelper.Log;
 import mx4j.util.Utils;
 import Helper.GetElement;
 import java.io.FileInputStream;
-import UtilitiesHelper.Constants;
+
 
 //import javax.swing.JOptionPane;a
 /* commented indivisual Listener class call- moved to testng to avoid cumberness
@@ -273,7 +273,7 @@ Click_Action.Btn_Click(PageObjectModal.WISE_PDPPage_Page.PDP_ProdInfo_CSS, 9, 6,
 	}
 	
 	@Test(priority = 6)
-	public void DocICSearch_ProductDocument() throws Exception
+	public void DocIDSearch_ProductDocument() throws Exception
 	{
 		Log.startTestCase("DocICSearch_ProductDocument");
 		//this.driver=driver;
@@ -299,7 +299,8 @@ Click_Action.Btn_Click(PageObjectModal.WISE_PDPPage_Page.PDP_ProdInfo_CSS, 9, 6,
 	else
 	{
 		System.out.println("Search box is not located on the screen/page");
-	//	driver.close();
+	    assert(false);
+		//	driver.close();
 		//driver.quit();
 		
 	}
@@ -338,6 +339,7 @@ Click_Action.Btn_Click(PageObjectModal.WISE_PDPPage_Page.PDP_ProdInfo_CSS, 9, 6,
 	else
 	{
 		System.out.println("No document link to click has found in search result page");
+		assert(false);
 		//driver.close();
 	//	driver.quit();
 		
@@ -521,7 +523,8 @@ public void DocumentRendering_ProcessDocument() throws Exception
 	else
 	{
 		System.out.println("Search box is not located on the screen/page");
-	   //  driver.close();
+	   assert(false);
+		//  driver.close();
 		 //driver.quit();
 		
 	}

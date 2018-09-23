@@ -27,6 +27,7 @@ public static void Btn_Click(String buttonName,int a,int b, String ObjIdentifier
 	
 	try {
 	ExcelUtility.getWebDriverfor().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	Thread.sleep(1000);
 	WebElement webElement = GetElement.getWebElement(buttonName,a,b,ObjIdentifier); 
 	if(webElement.isDisplayed()) {
 		ExcelUtility.getWebDriverfor().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

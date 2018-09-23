@@ -2,19 +2,6 @@
 <classpath>
 	<classpathentry excluding="main/resorces/" kind="src" output="target/classes" path="src"/>
 	<classpathentry kind="src" path="src/main/resorces"/>
-	<classpathentry kind="lib" path="C:/Program Files (x86)/SeleniumJARS/client-combined-3.13.0.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files (x86)/SeleniumJARS/client-combined-3.13.0-sources.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files (x86)/SeleniumJARS/libs/byte-buddy-1.8.3.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files (x86)/SeleniumJARS/libs/commons-codec-1.10.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files (x86)/SeleniumJARS/libs/commons-exec-1.3.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files (x86)/SeleniumJARS/libs/commons-logging-1.2.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files (x86)/SeleniumJARS/libs/gson-2.8.4.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files (x86)/SeleniumJARS/libs/guava-25.0-jre.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files (x86)/SeleniumJARS/libs/httpclient-4.5.5.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files (x86)/SeleniumJARS/libs/httpcore-4.4.9.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files (x86)/SeleniumJARS/libs/okhttp-3.10.0.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files (x86)/SeleniumJARS/libs/okio-1.14.1.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files (x86)/SeleniumJARS/selenium-server-standalone-3.13.0.jar"/>
 	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
 	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
 		<attributes>
@@ -26,8 +13,21 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre1.8.0_181"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.8.0_181"/>
 	<classpathentry kind="lib" path="Lib/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="C:/Users/anujksharma/Documents/SeleniumFW_Aks_Latest_972018/SeleniumJARS/client-combined-3.13.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/anujksharma/Documents/SeleniumFW_Aks_Latest_972018/SeleniumJARS/selenium-server-standalone-3.13.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/anujksharma/Documents/SeleniumFW_Aks_Latest_972018/SeleniumJARS/client-combined-3.13.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/anujksharma/Documents/SeleniumFW_Aks_Latest_972018/SeleniumJARS/libs/byte-buddy-1.8.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/anujksharma/Documents/SeleniumFW_Aks_Latest_972018/SeleniumJARS/libs/commons-codec-1.10.jar"/>
+	<classpathentry kind="lib" path="C:/Users/anujksharma/Documents/SeleniumFW_Aks_Latest_972018/SeleniumJARS/libs/commons-exec-1.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/anujksharma/Documents/SeleniumFW_Aks_Latest_972018/SeleniumJARS/libs/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/anujksharma/Documents/SeleniumFW_Aks_Latest_972018/SeleniumJARS/libs/gson-2.8.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/anujksharma/Documents/SeleniumFW_Aks_Latest_972018/SeleniumJARS/libs/guava-25.0-jre.jar"/>
+	<classpathentry kind="lib" path="C:/Users/anujksharma/Documents/SeleniumFW_Aks_Latest_972018/SeleniumJARS/libs/httpclient-4.5.5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/anujksharma/Documents/SeleniumFW_Aks_Latest_972018/SeleniumJARS/libs/httpcore-4.4.9.jar"/>
+	<classpathentry kind="lib" path="C:/Users/anujksharma/Documents/SeleniumFW_Aks_Latest_972018/SeleniumJARS/libs/okhttp-3.10.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/anujksharma/Documents/SeleniumFW_Aks_Latest_972018/SeleniumJARS/libs/okio-1.14.1.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre1.8.0_171"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

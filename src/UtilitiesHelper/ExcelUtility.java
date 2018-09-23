@@ -33,7 +33,7 @@ public class ExcelUtility {
 		if(driver==null)
 		{
 			setWebDriver();
-		 driver.manage().deleteAllCookies();
+		driver.manage().deleteAllCookies();
 		}
 		return driver;
 		
@@ -158,7 +158,7 @@ public static void setWebDriver()
 	{
 			//read it from config prop
 	//System.setProperty("webdriver.chrome.driver","C:\Users\anujksharma\Downloads\Eclipse_NewMachine\eclipseDev (USHYDBGANTASAL6)\UI AUtomation_Selenium\Lib\chromedriver.exe");
-		System.setProperty("webdriver.chrome.driver","D:/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","C:/Users/anujksharma/Downloads/chromedriver.exe");
 
 		driver= new ChromeDriver();
 		

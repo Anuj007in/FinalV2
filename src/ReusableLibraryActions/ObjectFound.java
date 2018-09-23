@@ -129,6 +129,7 @@ public class ObjectFound {
 				ex.printStackTrace();
 				ExcelUtility.setExcelFile(UtilitiesHelper.Constants.Path_TestData, "Sheet1");
 				ExcelUtility.setCellData("Failed", a, b,"Fail");
+				assert(false);
 				
 			}
 		return false;	

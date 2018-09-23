@@ -1,5 +1,6 @@
 package ReusableLibraryActions;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -12,7 +13,7 @@ public class Wait_ElementToBeClickable {
 	{
 		Thread.sleep(1000);
 		WebDriverWait wait = new WebDriverWait(driver, duration);
-		wait.until(ExpectedConditions.elementToBeClickable(objectIdentifier));
+		wait.until(ExpectedConditions.elementToBeClickable((By) objectIdentifier));
 		
 		
 	}

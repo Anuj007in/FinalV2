@@ -4,7 +4,7 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;		
 import org.testng.ITestResult;	
 
-//Author :Anuj SHarma
+//Author :Anuj Sharma
 /* Description: OnStart- OnStart method is called when any Test starts.
 onTestSuccess- onTestSuccess method is called on the success of any Test.
 onTestFailure- onTestFailure method is called on the failure of any Test.
@@ -14,8 +14,7 @@ onFinish- onFinish method is called after all Tests are executed
 */
 public class IListner implements ITestListener	 {
 				
-	
-		//UtilitiesHelper.IListner.class
+	//UtilitiesHelper.IListner.class
 	@Override 
 	    public void onFinish(ITestContext Result) 					
 	    {		
@@ -28,14 +27,14 @@ public class IListner implements ITestListener	 {
 	    	System.out.println("Test execution is started");   		
 	    }		
 
-	   @Override		
+	  @Override		
 	    public void onTestFailedButWithinSuccessPercentage(ITestResult Result)					
 	    {		
 	    	System.out.println("NA ");
 	    }		
 
 	    // When Test case get failed, this method is called.		
-	    @Override		
+	    //@Override		
 	    public void onTestFailure(ITestResult Result) 					
 	    {		
 	    System.out.println("The name of the testcase failed is :"+Result.getName());					
@@ -49,7 +48,7 @@ public class IListner implements ITestListener	 {
 	    }		
 
 	    // When Test case get Started, this method is called.		
-	    @Override		
+	   @Override		
 	    public void onTestStart(ITestResult Result)					
 	    {		
 	    System.out.println(Result.getName()+" test case started");					
